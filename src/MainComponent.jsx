@@ -17,13 +17,6 @@ import AccountStatement from './Pages/Reports/AccountStatement'
 import PartyWinLoss from './Pages/Reports/PartyWinLoss'
 import CurrentBets from './Pages/Reports/CurrentBets'
 import UserHistory from './Pages/Reports/UserHistory'
-import GeneralLock from './Pages/Reports/GeneralLock'
-import OurCasino from './Pages/Reports/OurCasino'
-import LiveCasino from './Pages/Reports/LiveCasino'
-import Sportbook from './Pages/Reports/Sportbook'
-import TurnOver from './Pages/Reports/TurnOver'
-import UserAuth from './Pages/Reports/UserAuth'
-import FraudReport from './Pages/Reports/FraudReport'
 
 
 const MainComponent = () => {
@@ -53,13 +46,6 @@ const navigate = useNavigate()
     <PartyWinLoss />,
     <CurrentBets />,
     <UserHistory />,
-    <GeneralLock />,
-    <OurCasino />,
-    <LiveCasino />,
-    <Sportbook />,
-    <TurnOver />,
-    <UserAuth />,
-    <FraudReport />,
   ];
 
   const toggleSidebarText = () => {
@@ -87,11 +73,6 @@ const navigate = useNavigate()
     setSelectedDropdownIndex(-1);
     navigate('/active-user')
   };
-
-
-  // const toggleLogo = () => {
-  //   setShowLogo((prevShowLogo) => !prevShowLogo);
-  // }
 
   return (
     <>
@@ -124,14 +105,6 @@ const navigate = useNavigate()
                 <Route path="/bank" element={<Bank />} />
                 <Route path="/report/*" element={<ReportRoutes />} />
               </Routes>
-              {/* {selectedListIndex === 3 && selectedDropdownIndex !== -1 ? (
-                // Display the "Account" dropdown pages when the dropdown is clicked
-                // pages[selectedListIndex + selectedDropdownIndex]
-                <CreateAccount />
-              ) : (
-                // Display regular sidebar pages
-                pages[selectedListIndex]
-              )} */}
             </div>
           </div>
            ) : (
@@ -146,14 +119,6 @@ const navigate = useNavigate()
                 <Route path="/bank" element={<Bank />} />
                 <Route path="/report/*" element={<ReportRoutes />} />
               </Routes>
-              {/* {selectedListIndex === 3 && selectedDropdownIndex !== -1 ? (
-                // Display the "Account" dropdown pages when the dropdown is clicked
-                // pages[selectedListIndex + selectedDropdownIndex]
-                <CreateAccount />
-              ) : (
-                // Display regular sidebar pages
-                pages[selectedListIndex]
-              )} */}
             </div>
           </div>
            )}

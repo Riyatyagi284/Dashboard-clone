@@ -3,6 +3,8 @@ import { BiPhoneCall, BiSolidCity } from "react-icons/bi"
 import { LuArrowBigRightDash } from "react-icons/lu"
 import { FaFileExcel } from "react-icons/fa"
 import Loader from '../Loader'
+import Userlist from "../../pdfFile/userlist.pdf"
+
 
 const CurrentBets = () => {
 
@@ -80,17 +82,17 @@ const CurrentBets = () => {
                 <div className="col-md-8 col-lg-4">
                   <div className="custom-control-wrapper2">
                     <div className="custom-control">
-                      <input type="radio" id="customRadio3" name="example" value="matchbet" checked="checked" class="custom-control-input" />
+                      <input type="radio" id="customRadio3" name="example" value="matchbet" checked="checked" className="custom-control-input" />
                       <label htmlFor="customRadio4">All</label>
                     </div>
 
                     <div className="custom-control">
-                      <input type="radio" id="customRadio5" name="example" value="matchbet" checked="checked" class="custom-control-input" />
+                      <input type="radio" id="customRadio5" name="example" value="matchbet" checked="checked" className="custom-control-input" />
                       <label htmlFor="customRadio5">Black</label>
                     </div>
 
                     <div className="custom-control">
-                      <input type="radio" id="customRadio6" name="example" value="matchbet" checked="checked" class="custom-control-input" />
+                      <input type="radio" id="customRadio6" name="example" value="matchbet" checked="checked" className="custom-control-input" />
                       <label htmlFor="customRadio6">Lay</label>
                     </div>
                   </div>
@@ -101,12 +103,18 @@ const CurrentBets = () => {
 
                       <div className="search-form-right ">
                         <div className='party-search'>
+
+                        <a href={Userlist} download="test">
                           <button className="btn btn-green-file" type="submit">
                             <FaFileExcel />
                           </button>
+                          </a>
+
+                          <a href={Userlist} download="test">
                           <button className="btn btn-red-file" type="submit">
                             <FaFileExcel />
                           </button>
+                          </a>
                         </div>
                       </div>
 
@@ -157,47 +165,47 @@ const CurrentBets = () => {
                   <table className='table load-table table-bordered reset-table'>
                     <thead>
                       <tr>
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Event Type</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Event Name</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader">
                           <div>User Name</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>M Name</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Nation</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>U Rate</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Amount</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Place Date</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>IP</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Browser</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Action</div>
                         </th>
 
@@ -207,10 +215,10 @@ const CurrentBets = () => {
                     <tbody>
 
                       <tr >
-                        <td colSpan={8} className="reset-td reset-td-right">
-                          <div className="text-center">
+                        <td colSpan={8} className="reset-td reset-td-right" style={{textAlign:"center"}}>
+                          <span className="text-center">
                             There are no records to show .
-                          </div>
+                          </span>
                         </td>
                       </tr>
 
@@ -220,16 +228,16 @@ const CurrentBets = () => {
               </div>
 
               <nav aria-label="Page navigation example text-right">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
+                <ul className="pagination">
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
-                      {/* <span class="sr-only">Previous</span> */}
+                      {/* <span className="sr-only">Previous</span> */}
                     </a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                  <li className="page-item"><a className="page-link" href="#">1</a></li>
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
                       {/* <span class="sr-only">Next</span> */}
                     </a>
@@ -249,17 +257,17 @@ const CurrentBets = () => {
                 <div className="col-md-8 col-lg-4">
                   <div className="custom-control-wrapper2">
                     <div className="custom-control">
-                      <input type="radio" id="customRadio3" name="example" value="matchbet" checked="checked" class="custom-control-input" />
+                      <input type="radio" id="customRadio3" name="example" value="matchbet" checked="checked" className="custom-control-input" />
                       <label htmlFor="customRadio4">All</label>
                     </div>
 
                     <div className="custom-control">
-                      <input type="radio" id="customRadio5" name="example" value="matchbet" checked="checked" class="custom-control-input" />
+                      <input type="radio" id="customRadio5" name="example" value="matchbet" checked="checked" className="custom-control-input" />
                       <label htmlFor="customRadio5">Black</label>
                     </div>
 
                     <div className="custom-control">
-                      <input type="radio" id="customRadio6" name="example" value="matchbet" checked="checked" class="custom-control-input" />
+                      <input type="radio" id="customRadio6" name="example" value="matchbet" checked="checked" className="custom-control-input" />
                       <label htmlFor="customRadio6">Lay</label>
                     </div>
                   </div>
@@ -272,12 +280,18 @@ const CurrentBets = () => {
 
                       <div className="search-form-right ">
                         <div className='party-search'>
+
+                        <a href={Userlist} download="test">
                           <button className="btn btn-green-file" type="submit">
                             <FaFileExcel />
                           </button>
+                          </a>
+
+                          <a href={Userlist} download="test">
                           <button className="btn btn-red-file" type="submit">
                             <FaFileExcel />
                           </button>
+                          </a>
                         </div>
                       </div>
 
@@ -328,47 +342,47 @@ const CurrentBets = () => {
                   <table className='table load-table table-bordered reset-table'>
                     <thead>
                       <tr>
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>Event Type</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>Event Name</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>User Name</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>M Name</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>Nation</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>U Rate</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>Amount</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>Place Date</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>IP</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader"   >
                           <div>Browser</div>
                         </th>
 
-                        <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                        <th role="columnheader" >
                           <div>Action</div>
                         </th>
 
@@ -378,10 +392,10 @@ const CurrentBets = () => {
                     <tbody>
 
                       <tr >
-                        <td colSpan={8} className="reset-td reset-td-right">
-                          <div className="text-center">
+                        <td colSpan={8} className="reset-td reset-td-right" style={{textAlign:"center"}}>
+                          <span className="text-center">
                             There are no records to show .
-                          </div>
+                          </span>
                         </td>
                       </tr>
 
@@ -391,16 +405,16 @@ const CurrentBets = () => {
               </div>
 
               <nav aria-label="Page navigation example text-right">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
+                <ul className="pagination">
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
-                      {/* <span class="sr-only">Previous</span> */}
+                      {/* <span NaclassName="sr-only">Previous</span> */}
                     </a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                  <li className="page-item"><a NaclassName="page-link" href="#">1</a></li>
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
                       {/* <span class="sr-only">Next</span> */}
                     </a>

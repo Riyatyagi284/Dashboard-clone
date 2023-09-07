@@ -6,6 +6,7 @@ import WithdrawForm from './AccountFunctionalities/WithdrawForm'
 import { useNavigate} from "react-router-dom"
 import MoreForm from './AccountFunctionalities/MoreForm'
 import Loader from '../Loader'
+import Userlist from "../../pdfFile/userlist.pdf"
  
 const ActiveUser = () => {
   const navigate = useNavigate()
@@ -66,7 +67,7 @@ const ActiveUser = () => {
         <div className="container-fluid white-bg">
           <div className="row search-bar">
             <div className="col-md-6 search-form">
-              <input type="text" class="form-control" id="client_id" placeholder='Search User' />
+              <input type="text" className="form-control" id="client_id" placeholder='Search User' />
               <button className="btn btn-black" type="submit" onClick={handleLoadClick}>Load</button>
               {isLoading && <Loader />}
               <button className="btn btn-grey" type="submit" onClick={handleLoadClick}>Reset</button>
@@ -74,12 +75,19 @@ const ActiveUser = () => {
 
             <div className="col-md-6 search-form-right">
               <div>
+
+              <a href={Userlist} download="test">
                 <button className="btn btn-green-file" type="submit"onClick={handleDownloadClick}>
                   <FaFileExcel />
                 </button>
+                </a>
+
+                <a href={Userlist} download="test">
                 <button className="btn btn-red-file" type="submit"onClick={handleDownloadClick}>
                   <FaFileExcel />
                 </button>
+                </a>
+                
               </div>
               <button className="btn btn-green create-acc" type="submit" onClick={navigateToCreateUser}>
                 + Create Account
@@ -116,49 +124,49 @@ const ActiveUser = () => {
               <table className='table b-table'>
                 <thead>
                   <tr>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>User Name</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>CR</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>pts</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>Cient(P/L)</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>Exposure</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>Available pts</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>B st</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>U st</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>PName</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>Account Type</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader"  >
                       <div>Action</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
                   </tr>
                 </thead>
@@ -190,7 +198,7 @@ const ActiveUser = () => {
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file" onClick={handleDepositeToggle}>D</button>
                         <button type="button" className="btn btn-red-file"onClick={handlewithdrawToggle}>W</button>
                         <button type="button" className="btn btn-blue-file" onClick={handleMoreToggle}>More</button>
@@ -223,7 +231,7 @@ const ActiveUser = () => {
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file" onClick={handleDepositeToggle}>D</button>
                         <button type="button" className="btn btn-red-file"onClick={handlewithdrawToggle}>W</button>
                         <button type="button" className="btn btn-blue-file" onClick={handleMoreToggle}>More</button>
@@ -256,7 +264,7 @@ const ActiveUser = () => {
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file" onClick={handleDepositeToggle}>D</button>
                         <button type="button" className="btn btn-red-file" onClick={handlewithdrawToggle}>W</button>
                         <button type="button" className="btn btn-blue-file" onClick={handleMoreToggle}>More</button>
@@ -289,7 +297,7 @@ const ActiveUser = () => {
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file" onClick={handleDepositeToggle}>D</button>
                         <button type="button" className="btn btn-red-file"onClick={handlewithdrawToggle}>W</button>
                         <button type="button" className="btn btn-blue-file"onClick={handleMoreToggle}>More</button>
@@ -303,18 +311,18 @@ const ActiveUser = () => {
           </div>
 
           <nav aria-label="Page navigation example text-right">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+            <ul className="pagination">
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
-                  {/* <span class="sr-only">Previous</span> */}
+                  {/* <span className="sr-only">Previous</span> */}
                 </a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+              <li className="page-item"><a className="page-link" href="#">1</a></li>
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
-                  {/* <span class="sr-only">Next</span> */}
+                  {/* <span className="sr-only">Next</span> */}
                 </a>
               </li>
             </ul>

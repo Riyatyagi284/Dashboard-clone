@@ -4,6 +4,7 @@ import { FaFileExcel } from "react-icons/fa"
 import AccountLoad from '../../SubPages/AccountStatement/AccountLoad'
 import AccountReset from '../../SubPages/AccountStatement/AccountReset'
 import Loader from "../Loader"
+import Userlist from "../../pdfFile/userlist.pdf"
 // import { DatePicker } from "antd"
 // const { RangePicker } = DatePicker;
 
@@ -107,7 +108,7 @@ const AccountStatement = () => {
                 <div className="col-lg-3">
                   <label htmlFor="d-inline-block Acc-label2-row1">Type</label>
                   <select className="form-select Acc-select" id='User-Type' aria-label="Default select example">
-                    <option selected>Deposite Withdraw Report</option>
+                    <option >Deposite Withdraw Report</option>
                     <option value="1">Game Report</option>
                   </select>
                 </div>
@@ -125,12 +126,18 @@ const AccountStatement = () => {
 
                   <div className="search-form-right ">
                     <div className='party-search'>
+
+                    <a href={Userlist} download="test">
                       <button className="btn btn-green-file" type="submit">
                         <FaFileExcel />
                       </button>
+                      </a>
+
+                      <a href={Userlist} download="test">
                       <button className="btn btn-red-file" type="submit">
                         <FaFileExcel />
                       </button>
+                      </a>
                     </div>
 
                   </div>
@@ -173,31 +180,31 @@ const AccountStatement = () => {
                       <table className='table load-table table-bordered reset-table'>
                         <thead>
                           <tr>
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>Date</div>
                             </th>
 
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>Sr. No.</div>
                             </th>
 
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>Credit</div>
                             </th>
 
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>Debit</div>
                             </th>
 
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>pts</div>
                             </th>
 
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>Remark</div>
                             </th>
 
-                            <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                            <th role="columnheader"  >
                               <div>Fromto</div>
                             </th>
 
@@ -207,10 +214,10 @@ const AccountStatement = () => {
                         <tbody>
 
                           <tr >
-                            <td colSpan={8} className="reset-td reset-td-right">
-                              <div className="text-center">
+                            <td colSpan={8} className="reset-td reset-td-right" style={{textAlign:"center"}}>
+                              <span className="text-center">
                                 There are no records to show .
-                              </div>
+                              </span>
                             </td>
                           </tr>
 
@@ -222,18 +229,18 @@ const AccountStatement = () => {
               )}
 
               <nav aria-label="Page navigation example text-right">
-                <ul class="pagination">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
+                <ul className="pagination">
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Previous">
                       <span aria-hidden="true">&laquo;</span>
-                      {/* <span class="sr-only">Previous</span> */}
+                      {/* <span className="sr-only">Previous</span> */}
                     </a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
+                  <li className="page-item"><a className="page-link" href="#">1</a></li>
+                  <li className="page-item">
+                    <a className="page-link" href="#" aria-label="Next">
                       <span aria-hidden="true">&raquo;</span>
-                      {/* <span class="sr-only">Next</span> */}
+                      {/* <span className="sr-only">Next</span> */}
                     </a>
                   </li>
                 </ul>
