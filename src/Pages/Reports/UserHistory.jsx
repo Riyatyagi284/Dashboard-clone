@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaFileExcel } from "react-icons/fa"
-import HistoryLoad from '../../SubPages/UserHistory/HistoryLoad'
+import HistoryLoad from '../../SubPages/UserHistory/LoginLogoutHistoryLoad'
 import HistoryReset from '../../SubPages/UserHistory/HistoryReset'
 import Loader from "../Loader"
 import 'react-calendar/dist/Calendar.css';
@@ -66,6 +66,7 @@ const UserHistory = () => {
         </div>
 
       </div>
+      
       <div className="container-fluid white-bg bets-bg">
         <div className="tab-content more-tb-content bets-content">
 
@@ -154,10 +155,10 @@ const UserHistory = () => {
 
                         <tbody>
                           <tr >
-                            <td colSpan={8} className="reset-td reset-td-right">
-                              <div className="text-center">
+                            <td colSpan={8} className="reset-td reset-td-right" style={{textAlign:"center"}}>
+                              <span className="text-center">
                                 There are no records to show .
-                              </div>
+                              </span>
                             </td>
                           </tr>
 
@@ -296,10 +297,10 @@ const UserHistory = () => {
                     <tbody>
 
                       <tr >
-                        <td colSpan={8} className="reset-td reset-td-right">
-                          <div className="text-center">
+                        <td colSpan={8} className="reset-td reset-td-right" style={{textAlign:"center"}}>
+                          <span className="text-center">
                             There are no records to show .
-                          </div>
+                          </span>
                         </td>
                       </tr>
 

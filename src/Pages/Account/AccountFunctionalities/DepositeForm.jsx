@@ -7,15 +7,15 @@ const DepositeForm = ({ onClose }) => {
             <div className="modal-overlay">
                 <div className='modal1'>
                     <header className='header'>
-                        <h5 class="modal-title text-uppercase text-white">Deposit</h5>
+                        <h5 className="modal-title text-uppercase text-white">Deposit</h5>
                         <span className='modal-close' onClick={onClose}>&times;</span>
                     </header>
-                    <ul class="nav nav-tabs tab-parent">
+                    <ul className="nav nav-tabs tab-parent">
                         {/* <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Active</a>
                         </li> */}
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Deposite</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Deposite</a>
                         </li>
                     </ul>
                     <div className="tab-content">

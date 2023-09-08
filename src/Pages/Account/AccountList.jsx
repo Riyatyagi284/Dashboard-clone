@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { FaFileExcel } from "react-icons/fa"
 import Loader from "../Loader"
+import Userlist from "../../pdfFile/userlist.pdf" 
 
 const AccountList = () => {
 const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +26,7 @@ const [isLoading, setIsLoading] = useState(false);
         <div className="container-fluid white-bg">
           <div className="row search-bar">
             <div className="col-md-6 search-form">
-              <input type="text" class="form-control" id="client_id" placeholder='Search User' />
+              <input type="text" className="form-control" id="client_id" placeholder='Search User' />
               <button className="btn btn-black" type="submit" onClick={handleLoadClick}>Load</button>
               {isLoading && <Loader />}
               <button className="btn btn-grey" type="submit" onClick={handleLoadClick}>Reset</button>
@@ -33,12 +34,18 @@ const [isLoading, setIsLoading] = useState(false);
 
             <div className="col-md-6 search-form-right">
               <div>
+
+              <a href={Userlist} download="test">
                 <button className="btn btn-green-file" type="submit">
                   <FaFileExcel />
                 </button>
+              </a>
+
+              <a href={Userlist} download="test">
                 <button className="btn btn-red-file" type="submit">
                   <FaFileExcel />
                 </button>
+              </a>
               </div>
               <button className="btn btn-green create-acc" type="submit">+ Create Account</button>
 
@@ -68,34 +75,34 @@ const [isLoading, setIsLoading] = useState(false);
               <table className='table b-table'>
                 <thead>
                   <tr>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>User Name</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>CR</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
           
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>B st</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>U st</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>PName</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>Account Type</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" className="position-relative">
+                    <th role="columnheader" className="position-relative">
                       <div>Action</div>
-                      {/* <span class="sr-only"> (Click to sort ascending)</span> */}
+                      
                     </th>
                   </tr>
                 </thead>
@@ -112,19 +119,19 @@ const [isLoading, setIsLoading] = useState(false);
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td>1Pt</td>
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file">D</button>
                         <button type="button" className="btn btn-red-file">W</button>
                         <button type="button" className="btn btn-blue-file">More</button>
@@ -142,19 +149,19 @@ const [isLoading, setIsLoading] = useState(false);
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td>1Pt</td>
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file">D</button>
                         <button type="button" className="btn btn-red-file">W</button>
                         <button type="button" className="btn btn-blue-file">More</button>
@@ -172,19 +179,19 @@ const [isLoading, setIsLoading] = useState(false);
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td>1Pt</td>
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file">D</button>
                         <button type="button" className="btn btn-red-file">W</button>
                         <button type="button" className="btn btn-blue-file">More</button>
@@ -202,19 +209,19 @@ const [isLoading, setIsLoading] = useState(false);
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td><div className="form-check form-switch">
                       <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
-                      <label className="form-check-label" for="flexSwitchCheckDefault"></label>
+                      <label className="form-check-label" htmlFor="flexSwitchCheckDefault"></label>
                     </div></td>
 
                     <td>1Pt</td>
                     <td>User</td>
 
                     <td>
-                      <div class="btn-group" role="group" aria-label="Basic example">
+                      <div className="btn-group" role="group" aria-label="Basic example">
                         <button type="button" className="btn btn-green-file">D</button>
                         <button type="button" className="btn btn-red-file">W</button>
                         <button type="button" className="btn btn-blue-file">More</button>
@@ -228,18 +235,18 @@ const [isLoading, setIsLoading] = useState(false);
           </div>
 
           <nav aria-label="Page navigation example text-right">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+            <ul className="pagination">
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
-                  {/* <span class="sr-only">Previous</span> */}
+                  {/* <span className="sr-only">Previous</span> */}
                 </a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+              <li className="page-item"><a className="page-link" href="#">1</a></li>
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
-                  {/* <span class="sr-only">Next</span> */}
+                  {/* <span className="sr-only">Next</span> */}
                 </a>
               </li>
             </ul>

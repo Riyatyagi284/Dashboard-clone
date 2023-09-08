@@ -45,7 +45,7 @@ const Navbar = ({ toggleSidebar }) => {
                         <p className='nav-rule'>Rules</p>
                     </a>
                     <p className='points'>pts:0</p>
-                    <p className='user'>Rakesh2
+                    <div className='user'>Rakesh2
                         <div className='dropdown' onClick={UserNametoggleDropdown}>
                             {isUserNameOpen ? <FaAngleUp /> : <FaAngleDown />}
                         </div>
@@ -56,7 +56,7 @@ const Navbar = ({ toggleSidebar }) => {
                                 <li>option3</li>
                             </ul>
                         )}
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

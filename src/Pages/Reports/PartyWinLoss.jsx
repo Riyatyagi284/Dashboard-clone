@@ -4,6 +4,7 @@ import Reset from "../../SubPages/PartyWinLoss/Reset";
 import Load from "../../SubPages/PartyWinLoss/Load";
 import { FaFileExcel } from "react-icons/fa"
 import Loader from '../Loader';
+import Userlist from "../../pdfFile/userlist.pdf"
 
 const PartyWinLoss = () => {
   const [currentPage, setCurrentPage] = useState('')
@@ -49,18 +50,25 @@ const PartyWinLoss = () => {
       <div className="container-fluid white-bg">
         <div className="row search-bar">
           <div className="col-md-6 search-form">
-            <input type="text" class="form-control" id="client_id" placeholder='Search User' />
+            <input type="text" className="form-control" id="client_id" placeholder='Search User' />
             <button className="btn btn-black" type="submit" onClick={handleLoadClick}>Load</button>
             <button className="btn btn-grey" type="submit" onClick={handleResetBtnClick}>Reset</button>
 
             <div className="search-form-right ">
               <div className='party-search'>
+
+              <a href={Userlist} download="test">
                 <button className="btn btn-green-file" type="submit">
                   <FaFileExcel />
                 </button>
+                </a>
+
+                <a href={Userlist} download="test">
                 <button className="btn btn-red-file" type="submit">
                   <FaFileExcel />
                 </button>
+                </a>
+
               </div>
 
             </div>
@@ -68,7 +76,7 @@ const PartyWinLoss = () => {
         </div>
 
         <div className="col-md-12 party-search-right">
-          <label for="fullName">Search:</label>
+          <label htmlFor="fullName">Search:</label>
           <input type="text" className="form-control" id="fullName" placeholder='search' />
         </div>
 
@@ -82,35 +90,35 @@ const PartyWinLoss = () => {
           <table className='table table-bordered reset-table'>
             <thead>
               <tr>
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>No</div>
                 </th>
 
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>User Name</div>
                 </th>
 
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>Level</div>
                 </th>
 
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>Casino pts</div>
                 </th>
 
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>Sport pts</div>
                 </th>
 
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>Third Party pts</div>
                 </th>
 
-                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th role="columnheader"  >
                   <div>Profit/Loss</div>
                 </th>
 
-                <th className="reset-last-th" role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                <th className="reset-last-th" role="columnheader"  >
                   <div>Ptype</div>
                 </th>
 
@@ -119,10 +127,10 @@ const PartyWinLoss = () => {
 
             <tbody>
               <tr >
-                <td colSpan={8} className="reset-td reset-td-right">
-                  <div className="text-center">
+                <td colSpan={8} className="reset-td reset-td-right" style={{textAlign:"center"}}>
+                  <span className="text-center">
                   There are no records to show .
-                  </div>
+                  </span>
                 </td>
               </tr>
 

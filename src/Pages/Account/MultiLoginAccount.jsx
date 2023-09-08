@@ -23,19 +23,19 @@ const MultiLoginAccount = () => {
                   <div className="container">
                     <div className="row">
                       <div className="col-md-3">
-                        <label for="client_id">Client Id</label>
+                        <label htmlFor="client_id">Client Id</label>
                         <input type="text" className="form-control multi-Acc-form" id="client_id" />
                       </div>
                       <div className="col-md-3">
-                        <label for="fullName">Full Name</label>
+                        <label htmlFor="fullName">Full Name</label>
                         <input type="text" className="form-control multi-Acc-form" id="fullName" />
                       </div>
                       <div className="col-md-3">
-                        <label for="inputPassword4">Password</label>
+                        <label htmlFor="inputPassword4">Password</label>
                         <input type="password" className="form-control multi-Acc-form" id="inputPassword4" />
                       </div>
                       <div className="col-md-3">
-                        <label for="inputPassword">Confirm Password</label>
+                        <label htmlFor="inputPassword">Confirm Password</label>
                         <input type="text" className="form-control multi-Acc-form" id="inputPassword" />
                       </div>
                     </div>
@@ -49,42 +49,42 @@ const MultiLoginAccount = () => {
                 <div className="col-md-2">
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       All
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Bank
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       General Lock
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Market Search Analysis
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       User Info
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       CouponReport
                     </label>
                   </div>
@@ -93,42 +93,42 @@ const MultiLoginAccount = () => {
                 <div className="col-md-3">
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Dashboard
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Account Statement
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Casino Result
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Login User Creation
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       User Password Change
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       active user
                     </label>
                   </div>
@@ -137,42 +137,42 @@ const MultiLoginAccount = () => {
                 <div className="col-md-2">
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Market Analysis
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Party win loss
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Live casino result
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Withdraw
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       User Lock
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       fraud report
                     </label>
                   </div>
@@ -182,42 +182,42 @@ const MultiLoginAccount = () => {
                 <div className="col-md-2">
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       User List
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Current Bets
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Our Casino
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Deposit
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Bet Lock
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Currency Permission
                     </label>
                   </div>
@@ -226,35 +226,35 @@ const MultiLoginAccount = () => {
                 <div className="col-md-2">
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Insert User
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       User History
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Events
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       Credit Reference
                     </label>
                   </div>
 
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                       TurnOver
                     </label>
                   </div>
@@ -272,7 +272,7 @@ const MultiLoginAccount = () => {
 
             <div className="table-section">
               <table className='table table-bordered'>
-                <div className="table table-bordered">
+                {/* <div className="table table-bordered"> */}
                   <tbody>
                     <tr className='table-row'>
                       <th className='fixed-col-1 '>Action</th>
@@ -296,7 +296,7 @@ const MultiLoginAccount = () => {
 
                     </tr>
                   </tbody>
-                </div>
+                {/* </div> */}
               </table>
 
               <div className=" overflow-x-scroll">

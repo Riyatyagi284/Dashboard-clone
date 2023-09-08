@@ -9,12 +9,12 @@ const WithdrawForm = ({ onClose }) => {
                         <h5 class="modal-title text-uppercase text-white">Deposit</h5>
                         <span className='modal-close' onClick={onClose}>&times;</span>
                     </header>
-                    <ul class="nav nav-tabs tab-parent">
+                    <ul className="nav nav-tabs tab-parent">
                         {/* <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Active</a>
                         </li> */}
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Withdraw</a>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">Withdraw</a>
                         </li>
                     </ul>
                     <div className="tab-content">

@@ -9,19 +9,35 @@ const HistoryReset = () => {
             <thead>
               <tr>
                 <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
-                  <div>User Name</div>
+                  <div>User Id</div>
                 </th>
 
                 <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
-                  <div>Date</div>
+                  <div>UserName</div>
                 </th>
 
                 <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
-                  <div>IP</div>
+                  <div>Login Date</div>
                 </th>
 
                 <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
-                  <div>Detail</div>
+                  <div>Login Time</div>
+                </th>
+
+                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                  <div>Logout Date</div>
+                </th>
+
+                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                  <div>Logout Time</div>
+                </th>
+
+                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                  <div>Ip Address</div>
+                </th>
+
+                <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                  <div>Device History</div>
                 </th>
               </tr>
             </thead>

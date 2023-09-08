@@ -214,7 +214,7 @@ const MoreForm = ({ onClose }) => {
                                     <label htmlFor="" className="col-4 col-form-label">Bet lock
                                     </label>
                                     <div className="custom-control col-8">
-                                        <input type="checkbox" class="custom-control-input" value="true" id="__BVID__3987" />
+                                        <input type="checkbox" className="custom-control-input" value="true" id="__BVID__3987" />
                                     </div>
                                 </div>
 
@@ -222,7 +222,7 @@ const MoreForm = ({ onClose }) => {
                                     <label htmlFor="" className="col-4 col-form-label">User lock
                                     </label>
                                     <div className="co-8 custom-control">
-                                        <input type="checkbox" class="custom-control-input" value="true" id="__BVID__3987" />
+                                        <input type="checkbox" className="custom-control-input" value="true" id="__BVID__3987" />
                                     </div>
                                 </div>
 
@@ -292,7 +292,7 @@ const MoreForm = ({ onClose }) => {
                                     <label htmlFor="" className="col-4 col-form-label">Change Password lock
                                     </label>
                                     <div className="custom-control col-8">
-                                        <input type="checkbox" class="custom-control-input" value="true" id="__BVID__3987" />
+                                        <input type="checkbox" className="custom-control-input" value="true" id="__BVID__3987" />
                                     </div>
                                 </div>
 
@@ -300,7 +300,7 @@ const MoreForm = ({ onClose }) => {
                                     <label htmlFor="" className="col-4 col-form-label">Favorite Master
                                     </label>
                                     <div className="co-8 custom-control">
-                                        <input type="checkbox" class="custom-control-input" value="true" id="__BVID__3987" />
+                                        <input type="checkbox" className="custom-control-input" value="true" id="__BVID__3987" />
                                     </div>
                                 </div>
 
@@ -308,7 +308,7 @@ const MoreForm = ({ onClose }) => {
                                     <label htmlFor="" className="co-4 col-form-label">Transaction Code
                                     </label>
                                     <div className="col-8 custom-control">
-                                        <input placeholder="Transaction Code" type="password" name="UserLockMpassword" class="form-control" aria-required="true" aria-invalid="true" />
+                                        <input placeholder="Transaction Code" type="password" name="UserLockMpassword" className="form-control" aria-required="true" aria-invalid="true" />
                                     </div>
                                 </div>
 

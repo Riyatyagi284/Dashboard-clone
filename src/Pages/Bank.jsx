@@ -4,6 +4,7 @@ import { FaFileExcel } from "react-icons/fa"
 import { AiOutlineArrowRight } from "react-icons/ai"
 import {Navigate, useNavigate} from "react-router-dom"
 import Loader from './Loader'
+import Userlist from "../pdfFile/userlist.pdf"
 
 const Bank = () => {
   const navigate = useNavigate()
@@ -50,7 +51,7 @@ const Bank = () => {
         <div className="container-fluid white-bg">
           <div className="row search-bar">
             <div className="col-md-6 search-form">
-              <input type="text" class="form-control" id="client_id" placeholder='Search User' />
+              <input type="text" className="form-control" id="client_id" placeholder='Search User' />
               <button className="btn btn-black" type="submit" onClick={handleLoadClick}>Load</button>
               {isLoading && <Loader />}
               <button className="btn btn-grey" type="submit" onClick={handleLoadClick}>Reset</button>
@@ -58,12 +59,19 @@ const Bank = () => {
 
             <div className="col-md-6 search-form-right">
               <div>
+
+              <a href={Userlist} download="test">
                 <button className="btn btn-green-file" type="submit">
                   <FaFileExcel />
                 </button>
+                </a>
+
+                <a href={Userlist} download="test">
                 <button className="btn btn-red-file" type="submit">
                   <FaFileExcel />
                 </button>
+                </a>
+                
               </div>
               <button className="btn btn-green create-acc" type="submit" onClick={navigateToCreateAccount}>
                 + Create Account
@@ -100,33 +108,33 @@ const Bank = () => {
               <table className='table b-table'>
                 <thead>
                   <tr>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>User Name</div>
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>CR</div>
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>pts</div>
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>Cient(P/L)</div>
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>Exposure</div>
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>Available pts</div>
                     </th>
                     
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>Account Type</div>
                     </th>
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>Action</div>
                     </th>
 
-                    <th role="columnheader" scope="col" tabindex="0" aria-colindex="1" aria-sort="descending" >
+                    <th role="columnheader" >
                       <div>Status</div>
                     </th>
                   </tr>
@@ -224,18 +232,18 @@ const Bank = () => {
           </div>
 
           <nav aria-label="Page navigation example text-right">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+            <ul className="pagination">
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
-                  {/* <span class="sr-only">Previous</span> */}
+                  {/* <span className="sr-only">Previous</span> */}
                 </a>
               </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+              <li className="page-item"><a className="page-link" href="#">1</a></li>
+              <li className="page-item">
+                <a className="page-link" href="#" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
-                  {/* <span class="sr-only">Next</span> */}
+                  {/* <span className="sr-only">Next</span> */}
                 </a>
               </li>
             </ul>
