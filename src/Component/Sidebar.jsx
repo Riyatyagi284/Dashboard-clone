@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { BiHomeCircle, BiUserPlus, BiMemoryCard } from 'react-icons/bi';
-import { BsBarChartFill } from "react-icons/bs"
+import { BsBarChartFill, BsChatRightText } from "react-icons/bs"
 import { FaRegUserCircle } from "react-icons/fa"
 import { BsBank } from "react-icons/bs"
 import { GrDocumentText } from "react-icons/gr"
@@ -128,6 +128,13 @@ const Sidebar = ({ onItemClick, showText, dropdownOptions, handleDropdownItemCli
                             <SlCalender size={32} />
                             <p>Events</p>
                         </Link></li>
+
+                        <li><Link to="/chat" className='anchor' onClick={() => onItemClick(9)}>
+                            <BsChatRightText size={32} />
+                            <p>Chat</p>
+                        </Link></li>
+
+                        
                     </>
                 ) :
                     (<>
@@ -197,7 +204,7 @@ const Sidebar = ({ onItemClick, showText, dropdownOptions, handleDropdownItemCli
 
                         </Link></li> */}
                         
-                        <li><Link to="/events" className='anchor' onClick={() => onItemClick(8)}>
+                        <li><Link to="/events" className='anchor' onClick={() => onItemClick(9)}>
                             <SlCalender size={32} />
 
                         </Link></li>

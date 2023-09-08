@@ -24,6 +24,7 @@ import Sportbook from './Pages/Reports/Sportbook'
 import TurnOver from './Pages/Reports/TurnOver'
 import UserAuth from './Pages/Reports/UserAuth'
 import FraudReport from './Pages/Reports/FraudReport'
+import Chat from './Pages/Chat'
 
 
 const MainComponent = () => {
@@ -123,6 +124,7 @@ const navigate = useNavigate()
                 <Route path="/account/*" element={<AccountRoutes />} />
                 <Route path="/bank" element={<Bank />} />
                 <Route path="/report/*" element={<ReportRoutes />} />
+                <Route path="/chat/:userId?" element={<Chat />} />
               </Routes>
               {/* {selectedListIndex === 3 && selectedDropdownIndex !== -1 ? (
                 // Display the "Account" dropdown pages when the dropdown is clicked
@@ -145,6 +147,7 @@ const navigate = useNavigate()
                 <Route path="/account/*" element={<AccountRoutes />} />
                 <Route path="/bank" element={<Bank />} />
                 <Route path="/report/*" element={<ReportRoutes />} />
+                <Route path="/chat/:userId?" element={<Chat />} />
               </Routes>
               {/* {selectedListIndex === 3 && selectedDropdownIndex !== -1 ? (
                 // Display the "Account" dropdown pages when the dropdown is clicked
