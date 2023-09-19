@@ -4,10 +4,11 @@ import { BiHomeCircle, BiUserPlus, BiMemoryCard } from 'react-icons/bi';
 import { BsBarChartFill, BsChatRightText } from "react-icons/bs"
 import { FaRegUserCircle } from "react-icons/fa"
 import { BsBank } from "react-icons/bs"
-import { GrDocumentText } from "react-icons/gr"
+import { GrDocumentText,GrNotification } from "react-icons/gr"
 import { SlCalender } from "react-icons/sl"
 import { FaAngleDown, FaAngleUp } from "react-icons/fa"
 import { height } from '@mui/system';
+import {GoCrossReference} from 'react-icons/go'
 
 const Sidebar = ({ onItemClick, showText, dropdownOptions, handleDropdownItemClick }) => {
 
@@ -134,6 +135,17 @@ const Sidebar = ({ onItemClick, showText, dropdownOptions, handleDropdownItemCli
                             <p>Chat</p>
                         </Link></li>
 
+                        <li><Link to="/notification" className='anchor' >
+                            <GrNotification size={32} />
+                            <p>Notification</p>
+                        </Link></li>
+
+                        <li><Link to="/referral" className='anchor' >
+                            <GoCrossReference size={32} />
+                            <p>Referral</p>
+                        </Link></li>
+
+                        
                         
                     </>
                 ) :
@@ -208,6 +220,21 @@ const Sidebar = ({ onItemClick, showText, dropdownOptions, handleDropdownItemCli
                             <SlCalender size={32} />
 
                         </Link></li>
+
+                        <li><Link to="/chat" className='anchor' >
+                            <BsChatRightText size={32} />
+                        </Link></li>
+
+                        <li><Link to="/notification" className='anchor' >
+                            <GrNotification size={32} />
+                        </Link></li>
+
+                        <li><Link to="/referral" className='anchor' >
+                            <GoCrossReference size={32} />
+                        </Link></li>
+
+
+                        
                     </>
                     )
             }
