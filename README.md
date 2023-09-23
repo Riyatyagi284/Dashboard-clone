@@ -9,5 +9,5 @@ Currently, two official plugins are available:
 
 /*********************HERE IS THE OUTPUT****************************/
 
-
+https://github.com/Riyatyagi284/Dashboard-clone/assets/130086862/09c5f260-4ab6-414e-9705-9f4bebcc9458
 
