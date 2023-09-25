@@ -4,7 +4,8 @@ import { FaFileExcel } from "react-icons/fa"
 import DepositeForm from "./AccountFunctionalities/DepositeForm"
 import WithdrawForm from './AccountFunctionalities/WithdrawForm'
 import { useNavigate} from "react-router-dom"
-import MoreForm from './AccountFunctionalities/MoreForm'
+// import MoreForm from './AccountFunctionalities/MoreForm'
+import MoreForm1  from "./AccountFunctionalities/MoreForm1"
 import Loader from '../Loader'
 import Userlist from "../../pdfFile/userlist.pdf"
  
@@ -19,7 +20,6 @@ const ActiveUser = () => {
     navigate('/account/create-account');
   };
   
-
    const handleLoadClick = () => {
     setIsLoading(true);
     setTimeout(() => {
@@ -97,8 +97,9 @@ const ActiveUser = () => {
 
             {showDeposite && <DepositeForm onClose = {handleDepositeToggle}/>}
             {showWithdraw && <WithdrawForm onClose = {handlewithdrawToggle}/>}
-            {showMore && <MoreForm onClose = {handleMoreToggle}/>}
-           
+            {/* {showMore && <MoreForm1 onClose = {handleMoreToggle}/>} */}
+            {showMore && <MoreForm1 onClose = {handleMoreToggle}/>}
+
           </div>
 
           <div className="col-sm-12 col-md-6">

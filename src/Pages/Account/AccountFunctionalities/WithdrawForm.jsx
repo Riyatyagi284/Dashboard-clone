@@ -23,13 +23,13 @@ const WithdrawForm = ({ onClose }) => {
                                 <label className='col-form-label col-4'>
                                     Rakesh2
                                 </label>
-                                <div className="col-8">
+                                <div className="col-12">
                                     <div className="row">
                                         <div className="col-6">
-                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" />
+                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" style={{width:'100%'}} />
                                         </div>
                                         <div className="col-6">
-                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" />
+                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" style={{width:'100%'}} />
                                         </div>
                                     </div>
                                 </div>
@@ -39,13 +39,13 @@ const WithdrawForm = ({ onClose }) => {
                                 <label className='col-form-label col-4'>
                                 abcdefss
                                 </label>
-                                <div className="col-8">
+                                <div className="col-12">
                                     <div className="row">
                                         <div className="col-6">
-                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" />
+                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" style={{width:'100%'}} />
                                         </div>
                                         <div className="col-6">
-                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" />
+                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" style={{width:'100%'}} />
                                         </div>
                                     </div>
                                 </div>
@@ -55,13 +55,13 @@ const WithdrawForm = ({ onClose }) => {
                                 <label className='col-form-label col-4'>
                                 Profit/Loss
                                 </label>
-                                <div className="col-8">
+                                <div className="col-12">
                                     <div className="row">
                                         <div className="col-6">
-                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" />
+                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right"  style={{width:'100%'}}/>
                                         </div>
                                         <div className="col-6">
-                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" />
+                                            <input placeholder="Amount" type="text" readonly="readonly" name="userDipositeloginusramount" className="form-d-control txt-right" style={{width:'100%'}} />
                                         </div>
                                     </div>
                                 </div>
@@ -71,11 +71,11 @@ const WithdrawForm = ({ onClose }) => {
                                 <label className='col-form-label col-4'>
                                 Amount
                                 </label>
-                                <div className="col-8">
+                                <div className="col-12">
                                     <div className="row">
                                         <div className="col-12">
                                             <input placeholder="Amount" type="text" name="userDipositeloginusramount" 
-                                            className='form-group-amnt' />
+                                            className='form-group-amnt' style={{width:'100%'}} />
                                         </div>
                                     </div>
                                 </div>
@@ -85,10 +85,10 @@ const WithdrawForm = ({ onClose }) => {
                                 <label className='col-form-label col-4'>
                                 Remark
                                 </label>
-                                <div className="col-8">
+                                <div className="col-12">
                                     <div className="row">
                                         <div className="col-12">
-                                        <textarea placeholder="Remark" data-vv-as="Remark" name="remark"  aria-required="false" aria-invalid="false" id='Remark'className='form-group-rmrk'></textarea>
+                                        <textarea placeholder="Remark" data-vv-as="Remark" name="remark"  aria-required="false" aria-invalid="false" id='Remark'className='form-group-rmrk' style={{width:'100%'}}></textarea>
 
                                         </div>
                                     </div>
@@ -99,10 +99,10 @@ const WithdrawForm = ({ onClose }) => {
                                 <label className='col-form-label col-4'>
                                 Transaction Code
                                 </label>
-                                <div className="col-8">
+                                <div className="col-12">
                                     <div className="row">
                                         <div className="col-12">
-                                        <input type="text" className="form-group-trans mb-2 mr-sm-2" id="Credit-Amount submit-left" placeholder="Transaction Code" />
+                                        <input type="text" className="form-group-trans mb-2 mr-sm-2" id="Credit-Amount submit-left" placeholder="Transaction Code" style={{width:'100%'}}/>
                                         </div>
                                     </div>
                                 </div>

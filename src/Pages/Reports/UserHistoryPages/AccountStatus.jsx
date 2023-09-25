@@ -40,7 +40,7 @@ const AccountStatus = () => {
       <div className="container-fluid">
         <div className="row search-bar">
           <div className="col-md-10 search-form">
-            <input type="text" class="form-control" id="client_id" placeholder='Search User' />
+            <input type="text" class="form-control" id="client_id" placeholder='Search User' value={searchValue} onChange={handleSearchInputChange}/>
 
 
             {/* <div>
@@ -96,7 +96,7 @@ const AccountStatus = () => {
           </div>
         </div>
 
-        {currentPage === 'Load' && <HistoryLoad />}
+        {currentPage === 'Load' && <HistoryLoad searchValue={searchValue}/>}
         {currentPage === 'Reset' && <HistoryReset />}
 
         {!currentPage && !isLoaded && (

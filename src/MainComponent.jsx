@@ -11,7 +11,6 @@ import ReportRoutes from "./Component/ReportRoutes"
 import Bank from "./Pages/Bank"
 import Report from "./Pages/Report"
 import ActiveUser from './Pages/Account/ActiveUser'
-import AccountList from './Pages/Account/AccountList'
 import CreateAccount from './Pages/Account/CreateAccount'
 import AccountStatement from './Pages/Reports/AccountStatement'
 import PartyWinLoss from './Pages/Reports/PartyWinLoss'
@@ -29,7 +28,7 @@ const navigate = useNavigate()
   // const [showLogo,setShowLogo] = useState("true");
 
   const dropdownOptions = [
-    ["Account list for active user", "Account List", "Create Account","Multi Login Account"],
+    ["Account list",  "Create Account","Multi Login Account"],
     ["Account Statement", "Party Win Loss", "Current Bets", "User History"],
     ["Account Statement1", "Party Win Loss1", "Current Bets1", "User History1"],
   ];
@@ -40,7 +39,6 @@ const navigate = useNavigate()
     <MultiLoginAccount />,
     <Bank />,
     <ActiveUser />,
-    <AccountList />,
     <CreateAccount />,
     <AccountStatement />,
     <PartyWinLoss />,

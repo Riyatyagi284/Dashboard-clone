@@ -11,8 +11,8 @@ const Transaction = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [value, onChange] = useState(new Date());
-  const [currentPage, setCurrentPage] = useState('')
-
+  const [currentPage, setCurrentPage] = useState('');
+  const [searchValue,setSearchValue] = useState('');
 
   const handleTransactionLoadClick = () => {
     setIsLoading(true);
@@ -29,6 +29,9 @@ const Transaction = () => {
     setCurrentPage("Reset")
   }
 
+  const handleSearchInputChange =(e) => {
+    setSearchValue(e.target.value);
+  };
 
   return (
     <div>
@@ -36,7 +39,8 @@ const Transaction = () => {
       <div className="container-fluid">
         <div className="row search-bar">
           <div className="col-md-10 search-form">
-            <input type="text" class="form-control" id="client_id" placeholder='Search User' />
+            <input type="text" class="form-control" id="client_id" placeholder='Search User' value={searchValue}
+            onChange={handleSearchInputChange} />
 
 
             {/* <div>
@@ -92,7 +96,7 @@ const Transaction = () => {
           </div>
         </div>
 
-        {currentPage === 'Load' && <HistoryLoad />}
+        {currentPage === 'Load' && <HistoryLoad  searchValue={searchValue}/>}
         {currentPage === 'Reset' && <HistoryReset />}
 
         {!currentPage && !isLoaded && (
