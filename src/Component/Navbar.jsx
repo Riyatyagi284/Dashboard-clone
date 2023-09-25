@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { BsFullscreen, BsInfoCircleFill } from "react-icons/bs"
 import { FaAngleDown, FaAngleUp } from "react-icons/fa"
 import { GiHamburgerMenu } from "react-icons/gi"
+import ChatNotification from './ChatNotification'
 
 const Navbar = ({ toggleSidebar }) => {
 
@@ -37,6 +38,7 @@ const Navbar = ({ toggleSidebar }) => {
                 </div> */}
 
                 <div className="col-md-4 nav-right">
+                    <ChatNotification />
                     <BsFullscreen size={24} />
                     <a className='anchor anchor-extra'>
                         <BsInfoCircleFill size={24} />

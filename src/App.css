@@ -1041,3 +1041,15 @@ textarea:focus {
     display: inline-block;
     margin-bottom: 2rem;
 }
+
+
+/* #################### Chat ############### */
+
+.chats-box{
+    color: #000;
+
+}
+
+.chats-box h2{
+    font-size: 15px !important;
+}

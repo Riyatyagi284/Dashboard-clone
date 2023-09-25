@@ -16,7 +16,10 @@ import AccountStatement from './Pages/Reports/AccountStatement'
 import PartyWinLoss from './Pages/Reports/PartyWinLoss'
 import CurrentBets from './Pages/Reports/CurrentBets'
 import UserHistory from './Pages/Reports/UserHistory'
-
+import Chat from './Pages/Chat'
+import Notification from './Pages/Notification'
+import Referral from './Pages/Referral'
+import ReferralRoute from './Component/referral/ReferralRoute'
 
 const MainComponent = () => {
 
@@ -100,8 +103,12 @@ const navigate = useNavigate()
                 <Route path="/market-analysis" element={<MarketAnalysis />} />
                 <Route path="/multi-login" element={<MultiLoginAccount />} />
                 <Route path="/account/*" element={<AccountRoutes />} />
+                <Route path="/referral/*" element={<ReferralRoute />} />
                 <Route path="/bank" element={<Bank />} />
                 <Route path="/report/*" element={<ReportRoutes />} />
+                <Route path="/chat/:userId?" element={<Chat />} />
+                <Route path="/notification" element={<Notification />} />
+                <Route path="/referral" element={<Referral />} />
               </Routes>
             </div>
           </div>
@@ -116,6 +123,9 @@ const navigate = useNavigate()
                 <Route path="/account/*" element={<AccountRoutes />} />
                 <Route path="/bank" element={<Bank />} />
                 <Route path="/report/*" element={<ReportRoutes />} />
+                <Route path="/chat/:userId?" element={<Chat />} />
+                <Route path="/notification" element={<Notification />} />
+                <Route path="/referral/*" element={<ReferralRoute />} />
               </Routes>
             </div>
           </div>
